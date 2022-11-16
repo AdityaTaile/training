@@ -1,0 +1,78 @@
+SELECT Syntax
+
+SELECT column1, column2, ...
+FROM table_name;
+SELECT CustomerName,City FROM Customers;
+
+SELECT * Example
+The following SQL statement selects all the columns from the "Customers" table:
+
+Example
+SELECT * FROM Customers;
+
+The SQL SELECT DISTINCT Statement
+The SELECT DISTINCT statement is used to return only distinct (different) values.
+
+Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.
+
+SELECT DISTINCT Syntax
+SELECT DISTINCT column1, column2, ...
+FROM table_name;
+
+SELECT DISTINCT Examples
+The following SQL statement selects only the DISTINCT values from the "Country" column in the "Customers" table:
+
+Example
+SELECT DISTINCT Country FROM Customers;
+
+The SQL WHERE Clause
+The WHERE clause is used to filter records.
+
+It is used to extract only those records that fulfill a specified condition.
+
+WHERE Syntax
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+Note: The WHERE clause is not only used in SELECT statements, it is also used in UPDATE, DELETE, etc.!
+
+WHERE Clause Example
+The following SQL statement selects all the customers from the country "Mexico", in the "Customers" table:
+
+Example
+SELECT * FROM Customers
+WHERE Country='Mexico';
+
+SQL AND, OR and NOT Operators
+The SQL AND, OR and NOT Operators
+The WHERE clause can be combined with AND, OR, and NOT operators.
+
+The AND and OR operators are used to filter records based on more than one condition:
+
+The AND operator displays a record if all the conditions separated by AND are TRUE.
+The OR operator displays a record if any of the conditions separated by OR is TRUE.
+The NOT operator displays a record if the condition(s) is NOT TRUE.
+
+AND Syntax
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+OR Syntax
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...;
+NOT Syntax
+SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+
+SQL ORDER BY Keyword
+The SQL ORDER BY Keyword
+The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+
+The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
+
+ORDER BY Syntax
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
